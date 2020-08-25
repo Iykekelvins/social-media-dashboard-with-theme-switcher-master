@@ -1,0 +1,278 @@
+.color{
+color: hsl(230, 17%, 14%);
+  /*(Top BG Pattern)*/color: hsl(232, 19%, 15%);
+ color /*(Card BG)*/: hsl(228, 28%, 20%);
+ color /*Blue (Text)*/: hsl(228, 34%, 66%);
+color: hsl(0, 0%, 100%);
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(230, 17%, 14%);
+    color:white;
+}
+
+h4, p{
+    color:hsl(228, 38%, 84%);
+}
+
+h2, nav > div > h4{
+    padding-left: 40px;
+}
+
+h3{
+    padding-left: 60px;
+}
+
+h5{
+    font-weight: 700;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header{
+    background-color:  hsl(232, 16%, 26%);
+    height: 120px;
+    padding:30px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.card{
+    cursor: pointer;
+}
+
+.card:hover{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.mode{
+    display: flex;
+}
+
+.mode-text{
+    padding-top: 3px;
+    padding-right: 5px;
+}
+
+.switch-btn{
+    border-radius: 50px;
+    width:40px;
+    height:20px;
+    border: none;
+    background:hsl(210, 78%, 56%);
+    cursor: pointer;
+} 
+
+.switch{
+    color:white;
+    position: relative;
+    font-size: 18px;
+    top:0;
+    left:1px;
+    margin: 0;
+    display: block;
+    width: 40%;
+    transition: ease-in-out 0.3s;
+}
+
+.slide .switch{
+    left:52%;
+    transition: ease-in-out 0.3s;
+}
+
+.card-b .card{
+    background-color:  hsl(230, 17%, 14%)
+}
+
+.username{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.username span{
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.followers{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 auto;
+    place-items: center;
+    padding: 20px;
+}
+
+.followers p{
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-size: 0.8em;
+    text-align: center;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.followers_number{
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+.top-card{
+    background-color: hsl(228, 28%, 20%);
+    border-radius: 5px;
+    padding: 15px 40px;
+    width: 200px;
+    display: grid;
+    place-items: center;
+    height: auto;
+}
+
+.facebook{
+    border-top: 3px solid hsl(208, 92%, 53%);
+}
+
+.twitter{
+    border-top: 3px solid hsl(208, 92%, 53%);
+}
+
+.instagram{
+    border-top: 3px solid hsl(37, 97%, 70%);
+}
+
+.youtube{
+    border-top: 3px solid hsl(348, 97%, 39%);
+}
+
+.facebook h5, .twitter h5, .instagram h5, .green-text{
+    color: hsl(163, 72%, 41%);
+}
+
+.youtube h5, .red-text{
+    color:hsl(356, 69%, 56%);
+}
+
+.overview{
+    display: grid;
+    place-items: center;
+    margin:0 auto;
+    padding:40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.bottom-card{
+    background-color: hsl(228, 28%, 20%);
+    border-radius: 5px;
+    padding: 25px 40px;
+    margin-bottom: 40px;
+    width: 200px;
+    height: 70px;
+}
+
+.overview-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overview-info:last-of-type{
+    padding-top: 20px;
+}
+
+.overviews_number{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+@media screen and (max-width:1220px){
+    h3{
+        margin-top: 400px;
+        text-align: center;
+        padding-right: 60px;
+    }
+    .mode{
+    width: 150px;
+    }
+    .followers, .overview{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .youtube{
+        margin-top:70px;
+    }
+    .overview{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:997px){
+    h3{
+        margin-top: 400px;
+    }
+    .followers, .overview{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .youtube, .instagram{
+        margin-top:70px;
+    }
+    .overview{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:687px){
+    h3{
+        margin-top: 900px;
+    }
+    .followers, .overview{
+        grid-template-columns:1fr;
+    }
+    .youtube, .instagram, .twitter{
+        margin-top:70px;
+    }
+    .overview{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:430px){
+    nav{
+        display: grid;
+    }
+    h3{
+        margin-top: 950px
+    }
+    nav > div > h4{
+        padding-bottom: 20px;
+    }
+    .mode-text{
+        padding-left: 20px;
+    }
+    .switch-btn{
+        margin-left: 80px;
+    }
+    .mode{
+        display: flex;
+        justify-content: space-between;
+        width:300px;
+        align-items: center;
+        }
+}
+
+@media screen and (max-width:320px){
+    .mode{
+        width:240px;
+    }
+    .card{
+        width:150px;
+    }
+}
