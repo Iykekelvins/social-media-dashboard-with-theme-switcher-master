@@ -236,6 +236,9 @@ nav{
     .followers, .overview{
         grid-template-columns:1fr;
     }
+    .followers{
+        padding:10px;
+    }
     .youtube, .instagram, .twitter{
         margin-top:70px;
     }
@@ -255,7 +258,7 @@ nav{
         padding-bottom: 20px;
     }
     .mode-text{
-        padding-left: 20px;
+        padding-left: 25px;
     }
     .switch-btn{
         margin-left: 80px;
@@ -263,8 +266,8 @@ nav{
     .mode{
         display: flex;
         justify-content: space-between;
-        width:300px;
         align-items: center;
+        width: 300px;
         }
 }
 
